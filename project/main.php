@@ -28,12 +28,12 @@ class Helper
 
     public static function clickMe()
     {
-        echo 'Hayayayaya!';
+        Interop::PlayVideo(self::YOUTUBE_VIDEO_URL);
     }
 
     public static function loadData()
     {
-        $hc = new \HttpClient();
+        $hc = new HttpClient();
         $rs = $hc->Execute('GET', self::API_URL);
 
         $struct = [
