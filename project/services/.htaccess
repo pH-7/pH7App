@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+##### htaccess version 1.0 #####
+
+RewriteRule ^gxobject$ gxobject.php [NC,L]
