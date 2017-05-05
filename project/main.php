@@ -17,12 +17,14 @@ $actionBar = new ActionBar();
 $actionBar->setClass('applicationBars');
 $win->addControl($actionBar);
 
-$mainTable->addControl($button,1,1);
+$mainTable->addControl($button, 1, 1);
 $win->addControl($mainTable);
 
 class Helper
 {
     const API_URL = 'http://www.devxtend.com/Gecko/samples/3_2/rest/main_load_data';
+
+    const YOUTUBE_VIDEO_URL = 'https://www.youtube.com/watch?v=01DCgOBBHJ0';
 
     public static function clickMe()
     {
